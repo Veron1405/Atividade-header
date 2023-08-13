@@ -1,0 +1,20 @@
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb( 48, 48, 48, 0.9);
+    left: 0px;
+    position: absolute;
+    top: 80px;
+    height: 300px;
+    width: 100%;
+}
+
+.menu-barras {
+    display: initial;
+}
+
+#icone {
+    color: white;
+    font-size: 30px;
+}

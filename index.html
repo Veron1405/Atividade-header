@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Silas Turbo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+
+</head>
+<body>
+   
+<header>
+    <div class="conteudo">
+        <nav id="nav-header" class="menu">
+            <a>Home</a>
+            <a>endereço</a>
+            <a>contato</a>
+            <i class="fa-solid fa-x"></i>
+        </nav>
+        <a class="menu-barras" onclick="mostrarmenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        </div>
+        </header>
+
+
+        <script src="https://kit.fontawesome.com/ed3c2b7bc8.js" crossorigin="anonymous"></script>
+        <script>
+            function mostrarmenu() {
+                var menu = document.getElementById("nav-header");
+                var icone = document.getElementById("icone");
+
+                if (getComputedStyle(menu).display == 'none') {
+                    menu.style.display = "flex";
+                    icone.classList.remove("fa-bars");
+                    icone.classList.add("fa-x");
+                }
+                else {
+                    menu.style.display = "none";
+                    icone.classList.add("fa-bars");
+                    icone.classList.remove("fa-x");
+                }
+            }
+        </script>
+
+        <div class="box10"></div>
+</body>
+</html>
